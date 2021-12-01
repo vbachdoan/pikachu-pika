@@ -16,6 +16,7 @@ body{
     display: flex;
     justify-content: center;
     position: relative;
+    min-width: 300px;
 }
 #head {
     width: 85px;
@@ -283,13 +284,6 @@ body{
     z-index: -100;
 }
 
-.word{
-    position: absolute;
-    width: fit-content;
-    top: 0px;
-    left: 0px;
-}
-
 /* animation */
 
 @keyframes left-hand {
@@ -298,11 +292,5 @@ body{
     }
     50%{
         transform: rotateZ(150deg);
-    }
-}
-
-@media screen and ( max-width : 305px ) {
-    #wrap-body{
-        min-width: 300px;
     }
 }
